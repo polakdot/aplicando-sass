@@ -1,0 +1,33 @@
+/* MEDIA QUERIES HEADER & FOOTER */
+
+@media all and (max-width: 1315px) {
+    .grid-header {
+        grid-template-areas: 
+            "logo"
+            "navbar";
+            grid-template-columns: auto;
+        }
+
+    #logo {
+        justify-self: center;
+    }
+    
+    #navbar {
+        justify-self: center;
+    }
+
+    .grid-footer {
+        grid-template-areas: 
+            "ul-footer" 
+            "redes-footer";
+            grid-template-columns: auto;
+        }
+    
+    #ul-footer {
+        justify-self: center;
+    }
+    
+    #redes-footer {
+        justify-self: center;
+    }
+}

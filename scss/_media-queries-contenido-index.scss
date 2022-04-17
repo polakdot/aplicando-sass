@@ -1,0 +1,21 @@
+/* MEDIA QUERIES MAIN */
+
+@media all and (max-width: 980px) {
+    .grid-main {
+        grid-template-areas:
+            "banner"  
+            "btn"
+            "linea-marsala" 
+            "linea-aqua" 
+            "linea-grill" 
+            "linea-pronto" 
+            "texto";
+        grid-template-columns: 1fr;
+    }
+
+    #texto {
+        text-align: center;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+}

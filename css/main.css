@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* HTML */
+/* HEADER & FOOTER */
+/* MAIN */
+/* BOTÓN */
+/* IMÁGENES */
+/* NOMBRE LÍNEAS */
+/* INFO COMERCIAL */
+.logoTitulo {
+  color: white;
+  /* color de logo */
+  font-size: 4.5rem;
+  /* tamaño de logo */
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding-bottom: 10px; }
+
+nav {
+  margin-right: 30px;
+  /* cambia el márgen */ }
+
+ul {
+  list-style: none;
+  /* quita los puntitos de las ul */
+  font-size: 2.1rem;
+  /* tamaño de letra de las secciones */ }
+  ul ul {
+    background-color: #f79605;
+    width: 100%;
+    position: absolute;
+    display: none; }
+    ul ul li {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  ul li {
+    color: white;
+    display: inline-block;
+    width: 16,6%;
+    position: relative;
+    margin-right: 10px;
+    /* cambia el márgen */
+    margin-left: 10px; }
+    ul li:hover ul {
+      display: block; }
+    ul li a {
+      color: white;
+      text-decoration: none;
+      /* quita el subrayado de los hipervínculos */
+      display: block; }
+
+footer {
+  background-color: #f79605;
+  height: 80px; }
+
+.redes-ig {
+  width: 30px;
+  /* ancho íconos redes */
+  margin-left: 10px;
+  /* margin */
+  margin-right: 5px; }
+
+.redes-fb {
+  width: 30px;
+  /* ancho íconos redes */
+  margin-right: 10px;
+  /* margin */
+  margin-left: 5px;
+  padding-right: 25px;
+  /* padding */
+  padding-left: 5px; }
+
+/* GRIDS HEADER*/
+.grid-header {
+  display: grid;
+  background-color: #f79605;
+  grid-template-areas: "logo navbar";
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px; }
+
+#logo {
+  grid-area: logo;
+  justify-self: start;
+  align-self: center; }
+
+#navbar {
+  grid-area: navbar;
+  justify-self: end;
+  align-self: center; }
+
+/* GRIDS FOOTER */
+.grid-footer {
+  display: grid;
+  grid-template-areas: "ul-footer redes-footer";
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px; }
+
+#ul-footer {
+  grid-area: ul-footer;
+  align-self: center;
+  justify-self: end; }
+
+#redes-footer {
+  grid-area: redes-footer;
+  align-self: center;
+  justify-self: end; }
+
+.btnWhatsapp {
+  background-color: #09820d;
+  /* color de fondo del botón */
+  width: 250px;
+  /* ancho */
+  height: 40px;
+  /*alto */
+  border-color: #09820d;
+  /* color del borde del botón */
+  border: 0;
+  /* grosor del borde del botón */
+  margin: 10px;
+  /* márgen */
+  padding: 5px;
+  /* padding */
+  font-size: 1.5rem;
+  /* tamaño texto */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* fuente */
+  color: white;
+  /* color texto */ }
+
+.bordesRedondeados {
+  border-radius: 30px;
+  /* bordes redondeados para las imágenes */ }
+
+.imgChica {
+  width: 300px;
+  /* ancho de imágenes */ }
+
+.lineaProducto {
+  font-size: 2.1rem;
+  /* tamaño del nombre de la línea de productos */
+  color: #000000;
+  /* color del nombre de la línea de productos */ }
+
+h4 {
+  text-align: center; }
+  h4 a {
+    text-decoration: none; }
+
+.infoComercial {
+  font-size: 4rem;
+  /* tamaño */
+  line-height: 2;
+  /* centrado */ }
+
+.iconos-info-comercial {
+  width: 25px; }
+
+/* GRADIENTES, TRANSFORMACIONES Y ANIMACIONES */
+.imgChica {
+  transition: width 0,7s; }
+
+.imgChica:hover {
+  width: 320px; }
+
+/* GRIDS MAIN */
+.grid-main {
+  display: grid;
+  grid-template-areas: "banner banner banner" "btn btn btn" "linea-marsala linea-aqua linea-grill" "texto texto linea-pronto";
+  grid-template-rows: auto auto 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px; }
+
+#banner {
+  grid-area: banner;
+  width: 100%;
+  justify-self: center; }
+
+#btn {
+  grid-area: btn;
+  justify-self: center; }
+
+#linea-marsala {
+  grid-area: linea-marsala;
+  justify-self: center;
+  align-self: center; }
+
+#linea-aqua {
+  grid-area: linea-aqua;
+  justify-self: center;
+  align-self: center; }
+
+#linea-grill {
+  grid-area: linea-grill;
+  justify-self: center;
+  align-self: center; }
+
+#texto {
+  grid-area: texto;
+  justify-self: center;
+  align-self: center;
+  margin-left: 75px;
+  margin-bottom: 50px; }
+
+#linea-pronto {
+  grid-area: linea-pronto;
+  justify-self: center;
+  align-self: center; }
+
+/* MEDIA QUERIES HEADER & FOOTER */
+@media all and (max-width: 1315px) {
+  .grid-header {
+    grid-template-areas: "logo" "navbar";
+    grid-template-columns: auto; }
+  #logo {
+    justify-self: center; }
+  #navbar {
+    justify-self: center; }
+  .grid-footer {
+    grid-template-areas: "ul-footer"  "redes-footer";
+    grid-template-columns: auto; }
+  #ul-footer {
+    justify-self: center; }
+  #redes-footer {
+    justify-self: center; } }
+
+/* MEDIA QUERIES MAIN */
+@media all and (max-width: 980px) {
+  .grid-main {
+    grid-template-areas: "banner"   "btn" "linea-marsala"  "linea-aqua"  "linea-grill"  "linea-pronto"  "texto";
+    grid-template-columns: 1fr; }
+  #texto {
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px; } }
+
+/* normalización */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif; }
+
+.inline {
+  display: inline;
+  /* elemento en línea */ }
+
+.block {
+  display: block;
+  /* elemento en bloque */ }
+
+.inline-block {
+  display: inline-block;
+  /* elemento inline-block */ }

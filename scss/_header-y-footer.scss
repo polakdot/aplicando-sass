@@ -1,0 +1,108 @@
+.logoTitulo {
+    color: $color-logo; /* color de logo */
+    font-size: $font-size-logo; /* tamaño de logo */
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+nav {
+    margin-right: 30px; /* cambia el márgen */
+}
+
+ul {
+    list-style: none; /* quita los puntitos de las ul */
+    font-size: $font-size-menu; /* tamaño de letra de las secciones */
+    ul {
+        background-color: $color-menu;
+        width: 100%;
+        position: absolute;
+        display: none;
+        li {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    li {
+        color: $color-secciones-menu;
+        display: inline-block;
+        width: 16,6%;
+        position: relative;
+        margin-right: 10px; /* cambia el márgen */
+        margin-left: 10px;
+            &:hover ul {
+                display:block;
+            }
+        a {
+        color: $color-secciones-menu;
+        text-decoration: none; /* quita el subrayado de los hipervínculos */
+        display: block;
+        }
+    }
+}
+
+footer {
+    background-color: $color-header-footer;
+    height: 80px;
+}
+
+.redes-ig {
+    width: $width-redes; /* ancho íconos redes */
+    margin-left: 10px; /* margin */
+    margin-right: 5px;
+}
+
+.redes-fb {
+    width: $width-redes; /* ancho íconos redes */
+    margin-right: 10px; /* margin */
+    margin-left: 5px;
+    padding-right: 25px; /* padding */
+    padding-left: 5px;
+}
+
+/* GRIDS HEADER*/
+
+.grid-header {
+    display: grid;
+    background-color: $color-header-footer;
+    grid-template-areas: 
+        "logo navbar";
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: start;
+    align-self: center;
+}
+
+#navbar {
+    grid-area: navbar;
+    justify-self: end;
+    align-self: center;
+}
+
+/* GRIDS FOOTER */
+
+.grid-footer {
+    display: grid;
+    grid-template-areas: 
+        "ul-footer redes-footer";
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+}
+
+#ul-footer {
+    grid-area: ul-footer;
+    align-self: center;
+    justify-self: end;
+}
+
+#redes-footer {
+    grid-area: redes-footer;
+    align-self: center;
+    justify-self: end;
+}
