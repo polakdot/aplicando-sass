@@ -1,22 +1,5 @@
-.btnWhatsapp {
-    background-color: $color-boton; /* color de fondo del botón */
-    width: $width-boton;/* ancho */
-    height: $height-boton; /*alto */
-    border-color: $color-borde-boton; /* color del borde del botón */
-    border: $grosor-borde-boton; /* grosor del borde del botón */
-    margin: 10px; /* márgen */
-    padding: 5px; /* padding */
-    font-size: $font-size-boton; /* tamaño texto */
-    font-family: $fuente-boton; /* fuente */
-    color: $color-texto-boton; /* color texto */
-}
-
 .bordesRedondeados {
     border-radius: $bordes-imagenes; /* bordes redondeados para las imágenes */ 
-}
-
-.imgChica {
-    width: $size-imagenes; /* ancho de imágenes */ 
 }
 
 .lineaProducto {
@@ -37,18 +20,14 @@ h4 {
     line-height: $alineacion-info-comercial; /* centrado */
 }
 
-.iconos-info-comercial {
-    width: $width-iconos-info-comercial;
-}
-
 /* GRADIENTES, TRANSFORMACIONES Y ANIMACIONES */
 
-.imgChica {
-    transition: width 0,7s;
+.img-linea {
+    transition: width 1,5s;
 }
 
-.imgChica:hover {
-    width: 320px;
+.img-linea:hover {
+    width: 305px;
 }
 
 /* GRIDS MAIN */

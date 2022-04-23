@@ -1,0 +1,15 @@
+@mixin sizes ($width) {
+    width: $width;    
+}
+
+.img-linea {
+    @include sizes (300px);
+}
+
+.redes {
+    @include sizes (30px);
+}
+
+.iconos-info-comercial{
+    @include sizes (25px);
+}

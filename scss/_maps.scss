@@ -1,0 +1,11 @@
+$botones:(
+    whatsapp: #09820d,
+    contacto: #f79605,
+);
+
+@each $boton, $color in $botones {
+    .boton#{$boton}{
+        background-color:$color;
+        border-color: $color;
+    }
+}

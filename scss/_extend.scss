@@ -1,0 +1,17 @@
+.btn {
+    width: 250px;/* ancho */
+    height: 40px; /*alto */
+    border:0; /* grosor del borde del botón */
+    margin: 10px; /* márgen */
+    padding: 5px; /* padding */
+    font-size: 1.5rem; /* tamaño texto */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* fuente */
+    color:white; /* color texto */
+}
+
+.btn-form {
+    @extend.btn;
+    width: 175px;
+    height: 75px;
+    font-size: 2rem;
+}

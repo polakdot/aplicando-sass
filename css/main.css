@@ -55,15 +55,11 @@ footer {
   height: 80px; }
 
 .redes-ig {
-  width: 30px;
-  /* ancho íconos redes */
   margin-left: 10px;
   /* margin */
   margin-right: 5px; }
 
 .redes-fb {
-  width: 30px;
-  /* ancho íconos redes */
   margin-right: 10px;
   /* margin */
   margin-left: 5px;
@@ -106,35 +102,9 @@ footer {
   align-self: center;
   justify-self: end; }
 
-.btnWhatsapp {
-  background-color: #09820d;
-  /* color de fondo del botón */
-  width: 250px;
-  /* ancho */
-  height: 40px;
-  /*alto */
-  border-color: #09820d;
-  /* color del borde del botón */
-  border: 0;
-  /* grosor del borde del botón */
-  margin: 10px;
-  /* márgen */
-  padding: 5px;
-  /* padding */
-  font-size: 1.5rem;
-  /* tamaño texto */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* fuente */
-  color: white;
-  /* color texto */ }
-
 .bordesRedondeados {
   border-radius: 30px;
   /* bordes redondeados para las imágenes */ }
-
-.imgChica {
-  width: 300px;
-  /* ancho de imágenes */ }
 
 .lineaProducto {
   font-size: 2.1rem;
@@ -153,15 +123,12 @@ h4 {
   line-height: 2;
   /* centrado */ }
 
-.iconos-info-comercial {
-  width: 25px; }
-
 /* GRADIENTES, TRANSFORMACIONES Y ANIMACIONES */
-.imgChica {
-  transition: width 0,7s; }
+.img-linea {
+  transition: width 1,5s; }
 
-.imgChica:hover {
-  width: 320px; }
+.img-linea:hover {
+  width: 305px; }
 
 /* GRIDS MAIN */
 .grid-main {
@@ -234,6 +201,46 @@ h4 {
     text-align: center;
     margin-left: 0px;
     margin-bottom: 0px; } }
+
+.botonwhatsapp {
+  background-color: #09820d;
+  border-color: #09820d; }
+
+.botoncontacto {
+  background-color: #f79605;
+  border-color: #f79605; }
+
+.btn, .btn-form {
+  width: 250px;
+  /* ancho */
+  height: 40px;
+  /*alto */
+  border: 0;
+  /* grosor del borde del botón */
+  margin: 10px;
+  /* márgen */
+  padding: 5px;
+  /* padding */
+  font-size: 1.5rem;
+  /* tamaño texto */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* fuente */
+  color: white;
+  /* color texto */ }
+
+.btn-form {
+  width: 175px;
+  height: 75px;
+  font-size: 2rem; }
+
+.img-linea {
+  width: 300px; }
+
+.redes {
+  width: 30px; }
+
+.iconos-info-comercial {
+  width: 25px; }
 
 /* normalización */
 * {
