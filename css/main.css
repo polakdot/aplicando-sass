@@ -192,6 +192,26 @@ h4 {
   #redes-footer {
     justify-self: center; } }
 
+@media all and (max-width: 549px) {
+  #logo {
+    text-align: center; }
+  #ul-footer {
+    display: none; }
+  .grid-footer {
+    grid-template-areas: "redes-footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+  .redes-ig {
+    margin-left: 0px;
+    /* margin */ }
+  .redes-fb {
+    margin-right: 0px;
+    /* margin */
+    margin-left: 5px;
+    padding-right: 0px;
+    /* padding */
+    padding-left: 0px; } }
+
 /* MEDIA QUERIES MAIN */
 @media all and (max-width: 980px) {
   .grid-main {
